@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cadastro Frotas</title>
+		<link rel="stylesheet" type="text/css" href="css.css"/>
+	</head>
+
+	<body>
+		<div id="site">
+			<div id="header">
+				<table>
+					<tr>
+						<td align="left" id="hom">
+							<form action="teste.html" method="get"> 
+								<input type="submit" value="Home" id="boxa">
+							</form>
+						</td> 
+						<td id="config"><input  type="submit" value="Configurações" id="boxa"></td> 
+						<td id="cart"><img src="carta.jpg"  id="boxa"></td>
+					</tr>
+				</table>
+			</div>
+			<div align="center" id="conteudo">
+				<br/><br/><br/>
+				<form action="" align="center" method="POST">
+					<label for="idPlaca" class ="primeira-div">Placa</label><br />
+					<input type="text" id="idPlaca" name="inputModelo" class="segunda-div" maxlength="8" required autofocus><br /><br />
+
+					<label for="idModelo" class="primeira-div">Modelo</label><br />
+					<input type="text" id="idModelo" name="inputModelo" class="segunda-div" required><br /><br />
+
+					<label for="idChassi" class="primeira-div">Chassi</label><br />
+					<input type="text" id="idChassi" name="inputChassi" class="segunda-div" minlength="17" maxlength="17" required><br /><br />
+
+					<label for="idTipo" class="primeira-div">Tipo</label><br />
+					<select class="terceira-div" name="inputTipo" id="idTipo" required>
+						<option value="">Escolha um tipo</option>
+						<option value="">Carro</option>
+						<option value="">Moto</option>
+						<option value="">Caminhonete</option>
+						<option value="">Picape</option>
+					</select><br /><br/><br/>
+					<button id="box" type="submit">Cadastrar</button><br /><br />
+					<button id="box" class="btn button">Cancelar</button>
+				</form>
+			</div>
+			<div id="footer" align="center"> © Copyright DIREITOS RESERVADOS AO GRUPO GIT-UNI - 2017</div>
+		</div>
+	</body>
+</html>
